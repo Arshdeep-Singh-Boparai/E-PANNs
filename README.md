@@ -1,7 +1,13 @@
 # AI for Sound (AI4S) live sound recognition demo with E-PANNs
 
 General purpose, real-time sound recognition demo using Efficient PANNs (E-PANNs).
-The E-PANNs are obtained from the original PANNs (CNN14) proposed by Kong et al. and the demonstration is a modification on the top of previous demo https://github.com/yinkalario/General-Purpose-Sound-Recognition-Demo/tree/demo2019 built by Yin Cao and Andres Fernandez.
+
+The E-PANNs are obtained from the original PANNs (CNN14) proposed by Kong et al. [1] 
+
+[1] Qiuqiang Kong, Yin Cao, Turab Iqbal, Yuxuan Wang, Wenwu Wang, Mark D. Plumbley. "PANNs: Large-Scale Pretrained Audio Neural Networks for Audio Pattern Recognition." arXiv preprint arXiv:1912.10211 (2019).
+
+
+and the demonstration is a modification on the top of AI4S project previous demo https://github.com/yinkalario/General-Purpose-Sound-Recognition-Demo  built by Yin Cao and Andres Fernandez.
 
 ![demo screenshot](assets/demo_screenshot.png)
 
@@ -13,15 +19,13 @@ The prediction is obtained by applying the audio tagging system on consecutive s
 
 # Authors
 
-This demo has been developed using our work on AudioSet classification check the following links for more info and models:
-
-* Paper: 
-
 If you use our work, please consider citing us:
 
-[1] Arshdeep Singh, Haohe Liu and Mark D PLumbley, "E-PANNS: SOUND RECOGNITION USING EFFICIENT PRE-TRAINED AUDIO NEURAL NETWORKS", Internoise 2023.
+[a] Arshdeep Singh, Haohe Liu and Mark D PLumbley, "E-PANNS: Sound Recognition using Efficient Pre-Trained Audio Neural Networks", accepted in Internoise 2023.
 
----
+
+[b] Singh, Arshdeep, and Mark D. Plumbley. "Efficient CNNs via Passive Filter Pruning." arXiv preprint arXiv:2304.02319 (2023). 
+
 
 # Installation
 
