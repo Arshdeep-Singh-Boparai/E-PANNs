@@ -1,7 +1,7 @@
 # AI for Sound (AI4S) live sound recognition demo with E-PANNs
 
 General purpose, real-time sound recognition demo using Efficient PANNs (E-PANNs).
-The E-PANNs are obtained from the original PANNs proposed by Kong et al. and the demonstration is a modification on the top of previous demo https://github.com/yinkalario/General-Purpose-Sound-Recognition-Demo/tree/demo2019 built by Yin Cao and Andres Fernandez.
+The E-PANNs are obtained from the original PANNs (CNN14) proposed by Kong et al. and the demonstration is a modification on the top of previous demo https://github.com/yinkalario/General-Purpose-Sound-Recognition-Demo/tree/demo2019 built by Yin Cao and Andres Fernandez.
 
 ![demo screenshot](assets/demo_screenshot.png)
 
@@ -24,14 +24,6 @@ If you use our work, please consider citing us:
 ---
 
 # Installation
-
-### Repo:
-
-At the moment, no `pip` installation is available. Clone this repo into `<repo_root>` via:
-
-```
-https://github.com/yinkalario/General-Purpose-Sound-Recognition-Demo
-```
 
 ### Software dependencies:
 
