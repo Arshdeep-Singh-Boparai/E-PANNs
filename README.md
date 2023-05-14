@@ -9,7 +9,7 @@ The E-PANNs are obtained from the original PANNs (CNN14) proposed by Kong et al.
 
 and the demonstration is a modification on the top of AI4S project previous demo https://github.com/yinkalario/General-Purpose-Sound-Recognition-Demo  built by Yin Cao and Andres Fernandez.
 
-![demo screenshot](config/demo_screenshot.png)
+![demo screenshot](config/demo_image.png)
 
 
 The prediction is obtained by applying the audio tagging system on consecutive short audio segments. It is able to perform multiple updates per second on a moderate CPU. A sample video can be viewed at:
