@@ -1,6 +1,6 @@
 # AI for Sound (AI4S) live sound recognition demo
 
-## General purpose, real-time sound recognition demo using Efficient PANNs (E-PANNs).
+## Real-time sound recognition demo using Efficient PANNs (E-PANNs).
 ![demo screenshot](config/demo_image.png)
 
 
@@ -23,7 +23,10 @@ and the current demonstration shown in above Figure is a modification on the top
 
 
 
-The prediction/confidence in the above  Figure is obtained by applying the audio tagging system (E-PANNs) on consecutive short audio segments.  A sample video can be viewed at: (https://youtu.be/HiZw0pGXGQk)
+The prediction/confidence in the above  Figure is obtained by applying the audio tagging system (E-PANNs) on consecutive short audio segments.  
+
+
+### A sample video of demo can be viewed at: (https://youtu.be/HiZw0pGXGQk)
 
 
 
