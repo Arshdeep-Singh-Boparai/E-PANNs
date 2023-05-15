@@ -1,4 +1,4 @@
-# AI for Sound (AI4S) live sound recognition demo with E-PANNs
+# AI for Sound (AI4S) live sound recognition demo
 
 ## General purpose, real-time sound recognition demo using Efficient PANNs (E-PANNs).
 ![demo screenshot](config/demo_image.png)
