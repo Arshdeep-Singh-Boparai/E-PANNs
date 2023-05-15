@@ -1,30 +1,33 @@
 # AI for Sound (AI4S) live sound recognition demo with E-PANNs
 
-General purpose, real-time sound recognition demo using Efficient PANNs (E-PANNs).
-
-The E-PANNs are obtained from the original PANNs (CNN14) proposed by Kong et al. [1] 
-
-[1] Qiuqiang Kong, Yin Cao, Turab Iqbal, Yuxuan Wang, Wenwu Wang, Mark D. Plumbley. "PANNs: Large-Scale Pretrained Audio Neural Networks for Audio Pattern Recognition." arXiv preprint arXiv:1912.10211 (2019).
-
-
-and the demonstration is a modification on the top of AI4S project previous demo https://github.com/yinkalario/General-Purpose-Sound-Recognition-Demo  built by Yin Cao and Andres Fernandez.
-
+## General purpose, real-time sound recognition demo using Efficient PANNs (E-PANNs).
 ![demo screenshot](config/demo_image.png)
 
 
-The prediction is obtained by applying the audio tagging system on consecutive short audio segments. It is able to perform multiple updates per second on a moderate CPU. A sample video can be viewed at:
+
+The E-PANNs [1, 2] {~92MB, 24M parameters} are obtained from the original PANNs (CNN14) {~312MB, 81M parameters)[3].
+
+### Authors
+
+[1] Arshdeep Singh, Haohe Liu and Mark D PLumbley, "E-PANNS: Sound Recognition using Efficient Pre-Trained Audio Neural Networks", accepted in Internoise 2023.
+
+[2] Singh, Arshdeep, and Mark D. Plumbley. "Efficient CNNs via Passive Filter Pruning." arXiv preprint arXiv:2304.02319 (2023). 
+
+---
+
+[3] Qiuqiang Kong, Yin Cao, Turab Iqbal, Yuxuan Wang, Wenwu Wang, Mark D. Plumbley. "PANNs: Large-Scale Pretrained Audio Neural Networks for Audio Pattern Recognition." arXiv preprint arXiv:1912.10211 (2019).
+
+---
+
+and the current demonstration shown in above Figure is a modification on the top of the AI4S project (https://ai4s.surrey.ac.uk/) previous demo https://github.com/yinkalario/General-Purpose-Sound-Recognition-Demo  built by Yin Cao and Andres Fernandez. 
+
+
+
+The prediction/confidence in the above  Figure is obtained by applying the audio tagging system (E-PANNs) on consecutive short audio segments.  A sample video can be viewed at: (https://youtu.be/HiZw0pGXGQk)
 
 
 
 
-# Authors
-
-If you use our work, please consider citing us:
-
-[a] Arshdeep Singh, Haohe Liu and Mark D PLumbley, "E-PANNS: Sound Recognition using Efficient Pre-Trained Audio Neural Networks", accepted in Internoise 2023.
-
-
-[b] Singh, Arshdeep, and Mark D. Plumbley. "Efficient CNNs via Passive Filter Pruning." arXiv preprint arXiv:2304.02319 (2023). 
 
 
 # Installation
@@ -56,7 +59,7 @@ Then specify the path when running the app using the `MODEL_PATH` flag (see samp
 
 # RUN
 
-Assuming our command line is on `<repo_root>`, the `panns` environment is active and the model has been downloaded into `<repo_root>`, the following command should run the GUI with default parameters (tested on Ubuntu20.04):
+Assuming our command line is on `<repo_root>`, the `panns` environment is active and the model has been downloaded into `<repo_root>/models`, the following command should run the GUI with default parameters (tested on Ubuntu20.04):
 
 
 ```
@@ -66,9 +69,19 @@ python demo_tag.py
 Note that the terminal will print model summary upon start. The syntax to alter them is the same as with `MODEL_PATH`, e.g. to change the number of classes displayed to 10, add `TOP_K=10`.
 
 # Experimental Analysis
+## Convergence plot of E-PANNs when 25%, 50% and 75% filters are removed from the C7 to C13 layers of PANNS (CNN14).
+![convergence plot](config/PANNs_pruning_ratio_covergence.png)
+## Parameters vs mAPs across frameworks for Audio tagging
+![Exisitng method compare](config/PANNs_comparison_existing.png)
+## Overall flow diagram to obtain E-PANNs from original PANNs
+![Overall flow diagram](config/internoise_overall.jpg)
 
-![PANNs_compariosn](config/PANNs_comparison_existing.png)
-![PANNs comparison 2](config/PANNs_pruning_ratio_covergence.png)
+
+# Citation
+
+[1] Arshdeep Singh, Haohe Liu and Mark D PLumbley, "E-PANNS: Sound Recognition using Efficient Pre-Trained Audio Neural Networks", accepted in Internoise 2023.
+
+[2] Singh, Arshdeep, and Mark D. Plumbley. "Efficient CNNs via Passive Filter Pruning." arXiv preprint arXiv:2304.02319 (2023). 
 
 
 ---
