@@ -74,13 +74,14 @@ python demo_tag.py
 
 Note that the terminal will print model summary upon start. The syntax to alter them is the same as with `MODEL_PATH`, e.g. to change the number of classes displayed to 10, add `TOP_K=10`.
 
-# Experimental Analysis
+# Experimental setup/Analysis
+## Overall flow diagram to obtain E-PANNs from original PANNs
+![Overall flow diagram](config/internoise_overall.jpg)
+
 ## Convergence plot of E-PANNs when 25%, 50% and 75% filters are removed from the C7 to C13 layers of PANNS (CNN14).
 ![convergence plot](config/PANNs_pruning_ratio_covergence.png)
 ## Parameters vs mAPs across frameworks for Audio tagging
 ![Exisitng method compare](config/PANNs_comparison_existing.png)
-## Overall flow diagram to obtain E-PANNs from original PANNs
-![Overall flow diagram](config/internoise_overall.jpg)
 
 
 # Citation
@@ -98,3 +99,6 @@ Note that the terminal will print model summary upon start. The syntax to alter 
 * https://github.com/qiuqiangkong/audioset_tagging_cnn
 * https://github.com/qiuqiangkong/panns_inference
 * https://github.com/yinkalario/Sound-Event-Detection-AudioSet
+
+# Acknowldgements
+This work was supported by Engineering and Physical Sciences Research Council (EPSRC) Grant EP/T019751/1 “AI for Sound (AI4S)”. Project link:  https://ai4s.surrey.ac.uk/
