@@ -65,6 +65,10 @@ python demo_tag.py
 
 Note that the terminal will print model summary upon start. The syntax to alter them is the same as with `MODEL_PATH`, e.g. to change the number of classes displayed to 10, add `TOP_K=10`.
 
+# Experimental Analysis
+![PANNs_compariosn](config/PANNs_comparison.png)
+![PANNs comparison 2](config/PANNs_comparison.png)
+
 
 ---
 
