@@ -54,7 +54,7 @@ A comprehensive list of working dependencies can be found in the [full_dependenc
 
 
 Download the model into your preferred `<model_location>` from https://doi.org/10.5281/zenodo.7939403
-`<model_location>` == `<repo_root>/model`
+`<model_location>` == `<repo_root>/models`
 
 
 
