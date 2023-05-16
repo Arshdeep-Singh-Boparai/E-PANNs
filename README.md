@@ -82,7 +82,7 @@ Note that the terminal will print model summary upon start. The syntax to alter 
 ## Convergence plot of E-PANNs when 25%, 50% and 75% filters are removed from the C7 to C13 layers of PANNS (CNN14).
 ![convergence plot](config/PANNs_pruning_ratio_covergence.png)
 ## Parameters vs mAPs across frameworks for Audio tagging
-![Exisitng method compare](config/PANNs_comparison_existing.png)
+![Exisitng method compare](config/internoise_figures-Page-1.jpg)
 
 
 # Citation
