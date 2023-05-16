@@ -7,6 +7,9 @@
 
 The E-PANNs [1, 2] {~92MB, 24M parameters} are obtained from the original PANNs (CNN14) {~312MB, 81M parameters)[3].
 
+
+### A sample video of demo can be viewed at: (https://youtu.be/HiZw0pGXGQk)
+
 ### Authors
 
 [1] Arshdeep Singh, Haohe Liu and Mark D PLumbley, "E-PANNS: Sound Recognition using Efficient Pre-Trained Audio Neural Networks", accepted in Internoise 2023.
@@ -25,8 +28,6 @@ and the current demonstration shown in above Figure is a modification on the top
 
 The prediction/confidence in the above  Figure is obtained by applying the audio tagging system (E-PANNs) on consecutive short audio segments.  
 
-
-### A sample video of demo can be viewed at: (https://youtu.be/HiZw0pGXGQk)
 
 
 
