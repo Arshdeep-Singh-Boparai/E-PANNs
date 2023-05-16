@@ -53,13 +53,8 @@ A comprehensive list of working dependencies can be found in the [full_dependenc
 
 
 
-Download the model into your preferred `<model_location>` via: [pending.....]
-
-```
-wget https://zenodo.org/record/3576599/files/Cnn9_GMP_64x64_300000_iterations_mAP%3D0.37.pth?download=1
-```
-
-Then specify the path when running the app using the `MODEL_PATH` flag (see sample command below).
+Download the model into your preferred `<model_location>` from https://doi.org/10.5281/zenodo.7939403
+`<model_location>` == `<repo_root>/model`
 
 
 
