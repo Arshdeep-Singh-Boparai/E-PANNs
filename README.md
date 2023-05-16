@@ -49,6 +49,11 @@ conda install -c anaconda pyaudio
 
 A comprehensive list of working dependencies can be found in the [full_dependencies.txt](assets/full_dependencies.txt) file.
 
+# Model architecture
+### PANNs (CNN14)
+![PANNs architecture](config/internoise_figures-Page-3.jpg)
+
+
 ### E-PANNs model, (Efficient CNN14), model size ~ 92.53MB): 
 ![E-PANNs architecture](config/internoise_figures-Page-2.jpg)
 
