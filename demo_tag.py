@@ -145,7 +145,7 @@ n_mels = 64
 mel_fmin = 50
 mel_fmax = 14000
 
-top_k = 5
+top_k = 8 # change to display top few predictions
 
 
 # 0. Load AudioSet and allowed labels
