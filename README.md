@@ -12,13 +12,13 @@ The E-PANNs [1, 2] {~92MB, 24M parameters} are obtained from the original PANNs 
 
 ### Authors
 
-[1] Arshdeep Singh, Haohe Liu and Mark D PLumbley, "E-PANNS: Sound Recognition using Efficient Pre-Trained Audio Neural Networks", accepted in Internoise 2023.
+[1] A Singh, Haohe Liu, and Mark D. Plumbley. "E-PANNs: sound recognition using efficient pre-trained audio neural networks." Inter-Noise and Noise-Con Congress and Conference Proceedings, Institute of Noise Control Engineering, vol 268 No 1, pp 7220-7228, 2023
 
-[2] Singh, Arshdeep, and Mark D. Plumbley. "Efficient CNNs via Passive Filter Pruning." arXiv preprint arXiv:2304.02319 (2023). 
+[2] A Singh and M. D. Plumbley, "Efficient CNNs via Passive Filter Pruning," in IEEE Transactions on Audio, Speech and Language Processing, doi: 10.1109/TASLPRO.2025.3561589.  (https://ieeexplore.ieee.org/document/10966165)
 
 ---
 
-[3] Qiuqiang Kong, Yin Cao, Turab Iqbal, Yuxuan Wang, Wenwu Wang, Mark D. Plumbley. "PANNs: Large-Scale Pretrained Audio Neural Networks for Audio Pattern Recognition." arXiv preprint arXiv:1912.10211 (2019).
+[3] Q. Kong, Y. Cao, T. Iqbal, Y. Wang, W. Wang and M. D. Plumbley, "PANNs: Large-Scale Pretrained Audio Neural Networks for Audio Pattern Recognition," in IEEE/ACM Transactions on Audio, Speech, and Language Processing, vol. 28, pp. 2880-2894, 2020, doi: 10.1109/TASLP.2020.3030497.
 
 ---
 
@@ -87,9 +87,9 @@ Note that the terminal will print model summary upon start. The syntax to alter 
 
 # Citation
 
-[1] Arshdeep Singh, Haohe Liu and Mark D PLumbley, "E-PANNS: Sound Recognition using Efficient Pre-Trained Audio Neural Networks", accepted in Internoise 2023.
+[1] A Singh, Haohe Liu, and Mark D. Plumbley. "E-PANNs: sound recognition using efficient pre-trained audio neural networks." Inter-Noise and Noise-Con Congress and Conference Proceedings, Institute of Noise Control Engineering, vol 268 No 1, pp 7220-7228, 2023
 
-[2] Singh, Arshdeep, and Mark D. Plumbley. "Efficient CNNs via Passive Filter Pruning." arXiv preprint arXiv:2304.02319 (2023). 
+[2] A Singh and M. D. Plumbley, "Efficient CNNs via Passive Filter Pruning," in IEEE Transactions on Audio, Speech and Language Processing, doi: 10.1109/TASLPRO.2025.3561589.  (https://ieeexplore.ieee.org/document/10966165)
 
 
 ---
