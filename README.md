@@ -15,7 +15,7 @@ This repository provides a **real-time sound recognition demo** built on **Effic
 
 ## 👩‍💻 Authors
 - [1] A. Singh, H. Liu, and M. D. Plumbley, *E-PANNs: Sound recognition using efficient pre-trained audio neural networks*, Inter-Noise 2023.  
-- [2] A. Singh and M. D. Plumbley, *Efficient CNNs via Passive Filter Pruning*, IEEE/ACM TASLP, 2025. [DOI](https://ieeexplore.ieee.org/document/10966165)  
+- [2] A. Singh and M. D. Plumbley, *Efficient CNNs via Passive Filter Pruning*, IEEE TASLP, 2025. [DOI](https://ieeexplore.ieee.org/document/10966165)  
 - [3] Q. Kong et al., *PANNs: Large-Scale Pretrained Audio Neural Networks for Audio Pattern Recognition*, IEEE/ACM TASLP, 2020.  
 
 The current demonstration extends the [AI4S project](https://ai4s.surrey.ac.uk/) and builds upon the [General-Purpose Sound Recognition Demo](https://github.com/yinkalario/General-Purpose-Sound-Recognition-Demo) by Yin Cao and Andres Fernandez.
