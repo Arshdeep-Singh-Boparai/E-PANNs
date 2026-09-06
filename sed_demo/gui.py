@@ -52,7 +52,7 @@ class ResponsiveImgCanvas(tk.Canvas):
             new_h = max_h
             new_w = round((float(new_h) / self.ori_h) * self.ori_w)
         # resize image and return it
-        img = self.ori_img.resize((new_w, new_h), Image.ANTIALIAS)
+        img = self.ori_img.resize((new_w, new_h), Image.LANCZOS)
         img = ImageTk.PhotoImage(img)
         return img, (new_w, new_h)
 

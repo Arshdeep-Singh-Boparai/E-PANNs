@@ -100,11 +100,16 @@ class PredictionTracker:
     """
     """
 
-    def __init__(self, all_labels, allow_list=None, deny_list=None):
+    def __init__(self, all_labels, allow_list=None, deny_list=None,
+                 smoothing=0.3):
         """
         :param all_labels: List with all categories as returned by the model.
         :param allow_list: If not ``None``, contains the allowed categories.
         :param deny_list: If not ``None``, contains the categories ignored.
+        :param smoothing: If not ``None``, exponential moving average factor
+          in ``(0, 1]`` applied to tracked probabilities across calls, to
+          reduce rapid changes in displayed predictions. Lower values smooth
+          more (but lag more); ``1`` (or ``None``) disables smoothing.
         """
         self.all_labels = all_labels
         self.all_lbls_to_idxs = {l: i for i, l in enumerate(all_labels)}
@@ -116,6 +121,15 @@ class PredictionTracker:
                        if l in allow_list and l not in deny_list]
         self.lbls_to_idxs = {l: self.all_lbls_to_idxs[l] for l in self.labels}
         self.idxs = sorted(self.lbls_to_idxs.values())
+        self.smoothing = smoothing
+        self._smoothed_probs = None
+
+    def reset(self):
+        """
+        Clears the smoothed prediction state, so the next call starts fresh
+        instead of blending in probabilities from before the reset.
+        """
+        self._smoothed_probs = None
 
     def __call__(self, model_probs, top_k=6, sorted_by_p=True):
         """
@@ -124,6 +138,14 @@ class PredictionTracker:
         top_k += 1
         #
         tracked_probs = model_probs[self.idxs]
+        if self.smoothing is not None:
+            if self._smoothed_probs is None:
+                self._smoothed_probs = tracked_probs
+            else:
+                self._smoothed_probs = (
+                    self.smoothing * tracked_probs
+                    + (1 - self.smoothing) * self._smoothed_probs)
+            tracked_probs = self._smoothed_probs
         top_idxs = np.argpartition(tracked_probs, -top_k)[-top_k:]
         top_probs = tracked_probs[top_idxs]
         top_labels = [self.labels[idx] for idx in top_idxs]

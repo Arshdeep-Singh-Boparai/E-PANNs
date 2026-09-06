@@ -1,0 +1,9 @@
+matplotlib
+soundfile
+librosa
+torch
+torchlibrosa
+numba
+omegaconf
+llvmlite
+Pillow

@@ -107,6 +107,7 @@ class DemoApp(DemoFrontend):
     def start(self):
         """
         """
+        self.tracker.reset()
         self.audiostream.start()
         self.thread = Thread(target=self.inference_loop)
         self.thread.start()  # will end automatically if is_running=False
@@ -122,6 +123,8 @@ class DemoApp(DemoFrontend):
         print("Exiting...")
         if self.is_running():
             self.toggle_start()
+        if self.thread is not None:
+            self.thread.join()
         self.audiostream.terminate()
         self.destroy()
 
